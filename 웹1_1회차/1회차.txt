@@ -1,0 +1,28 @@
+Live Server
+
+http://naver.me/59iUu6cF (진도)
+
+javascript -> <script></script>
+body 마지막 부분에 작성
+
+<link rel="stylesheet" href="폴더명/파일">
+
+<div>
+   <p>글씨는 대부분 p 태그</p>
+</div>
+
+- 태그로 나누는 이유?
+검색엔진에서 레이아웃 판별 위해, 잘 작동하기 위해
+
+<p vs span>
+p, div, h...: 자동 줄 바꿈(블록 요소)
+- 화면 끝까지 영역 차지
+
+a, img, span...: 줄 바꿈X(인라인 요소)
+- 자기 영역까지
+
+블록 요소 안에 인라인  사용 가능(반대는 불가능 / 인라인 안에 인라인도 사용X)
+
+선 주고 싶을 시-> border
+
+Table: 단일(불록, 인라인...X)
