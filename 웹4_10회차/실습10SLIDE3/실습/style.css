@@ -1,0 +1,124 @@
+body, h1 {
+
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+
+    line-height: 100%;
+}
+
+::selection {
+
+    background-color: transparent;
+}
+
+body {
+
+    background-color: #da1f21;
+}
+
+.wrapper {
+
+    width: 960px;
+    margin: 0 auto;
+}
+
+#ground {
+
+    background-color: #222;
+    height: 400px;
+}
+
+/*
+    hero들을 poistion값을 이용하여 1줄로 붙여보세요.
+    bottom값에 -를 주세요.
+*/
+#ground .wrapper {
+
+    height: 100%;
+}
+
+#ground .hero {
+
+}
+
+#ground .hero.ironman { background-image: url(ironman.png); left: -50px; width: 229px; height: 228px; }
+#ground .hero.captain { background-image: url(captain.png); left: 130px; width: 254px; height: 270px; }
+#ground .hero.hulk { background-image: url(hulk.png); z-index: 4; left: 280px; width: 495px; height: 323px; }
+#ground .hero.blackwidow { background-image: url(blackwidow.png); z-index: 5; left: 535px; width: 185px; height: 145px;}
+#ground .hero.thor { background-image: url(thor.png); left: 760px; width: 256px; height: 216px; }
+
+
+
+
+#ground h1.hero-name {
+
+    font-family: arial;
+    font-weight: normal;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 50px;
+    line-height: 34px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    text-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+#ground .alogo {
+
+    margin: 20px;
+}
+
+#control {
+
+    background-color: #da1f21;
+    position: relative;
+    z-index: 9999; 
+}
+
+#control .wrapper {
+
+    position: relative;
+}
+
+#control .logo {
+
+    margin: 20px;
+}
+
+#control .arrow {
+
+    background-color: #ad0000;
+    width:  110px; 
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#control .arrow a {
+
+    display: inline-block;
+    width: 30px;
+    height: 80px; 
+    background-image: url(arrow.png);
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+#control .arrow a.next {
+
+    background-position: right top;
+}
+
+#control .arrow a:hover {
+
+    background-position-y: bottom;
+}

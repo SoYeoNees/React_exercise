@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step05_Each.html</title>
+</head>
+
+<body>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div>div5</div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        var names = ['짱구', '짱아', '흰둥이', '철수', '훈이']
+
+
+        $('div').each(function (index, item) {
+            /*
+                each 메서드 내에서의 this
+                선택된 문서객체를 순서대로 참조
+
+                index(순번)는 함수의 첫번째 인자로 전달
+            */
+            $(this).text(names[index]);
+            console.log(`index : ${index}, item : ${item}`);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_is1.html</title>
+</head>
+<body>
+    <div class="is_test_box">
+        <ul id="list">
+            <li>item01</li>
+            <li>item02</li>
+            <li>item03</li>
+        </ul>
+        <button type="button">CLICK</button>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        /*
+            [ is 메서드 ]
+            선택한 요소 중 하나가 is(선택한 Element)와 일치하는지 확인
+            결과값은 참/거짓으로 나타난다.
+        */
+        var testBox = $('.is_test_box');
+        var list = $('.is_test_box #list');
+        var Btn = $('.is_test_box button');
+
+        /*
+        Btn.on('click', function(){
+            var liBool = list.children().is('li');
+
+            // alert(liBool);
+            if(liBool){
+                alert('li태그가 있습니다');
+            } else {
+                alert('li태그가 없습니다');
+            }
+        });
+        */
+
+        Btn.on('click', function(){
+            var ulBool = testBox.children().is('#list');
+
+            // alert(ulBool);
+            if(ulBool){
+                alert('list 아이디가 있습니다');
+            } else {
+                alert('list 아이디가 없습니다');
+            }
+        })
+    </script>
+</body>
+</html>

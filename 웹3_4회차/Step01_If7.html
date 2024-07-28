@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_If7.html</title>
+</head>
+
+<body>
+    <div id="one">0</div>
+    <button onclick="add()">CLICK</button>
+    <script>
+        var count = 0;
+
+        var add = function () {
+            // 만일 #one이 10이면 0으로 돌아가서 다시 숫자가 증가되게 해주세요
+
+            if (count == 10) {
+                count = 0;
+                document.querySelector('#one').innerHTML = count;
+                return;
+            }
+            count = count + 1;
+            document.querySelector('#one').innerHTML = count;
+
+        }
+    </script>
+
+
+</body>
+
+</html>

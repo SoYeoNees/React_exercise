@@ -1,0 +1,8 @@
+.container {
+    margin-bottom: 40px auto;
+}
+
+.container .item {
+    background-color: yellowgreen;
+    border: 1px solid red;
+}

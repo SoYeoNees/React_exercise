@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step05_Background1.html</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        border: 5px solid blue;
+      }
+      #box1 {
+        background-color: red;
+      }
+      #box2 {
+        background-image: url("/images/icon01.png");
+        background-repeat: repeat; /* 기본값 */
+      }
+      #box3 {
+        background-image: url("/images/icon02.png");
+        background-repeat: repeat-x;
+      }
+      #box4 {
+        background-image: url("/images/icon03.png");
+        background-repeat: repeat-y;
+      }
+      #box5 {
+        background-image: url("/images/icon01.png");
+        background-repeat: no-repeat;
+      }
+      #box6 {
+        background-image: url("/images/icon02.png");
+        background-repeat: no-repeat;
+        background-position: left top;
+      }
+      #box7 {
+        background-image: url("/images/icon03.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+      }
+      #box8 {
+        background-image: url("/images/icon01.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+      }
+      #box9 {
+        background-image: url("/images/icon02.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+      #box10 {
+        background-image: url("/images/icon03.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #box11 {
+        background-image: url("/images/icon01.png");
+        background-repeat: no-repeat;
+        background-position: 10px 50px; /* x축 y축 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+    <div class="box" id="box7"></div>
+    <div class="box" id="box8"></div>
+    <div class="box" id="box9"></div>
+    <div class="box" id="box10"></div>
+    <div class="box" id="box11"></div>
+    <div class="box" id="box12"></div>
+  </body>
+</html>

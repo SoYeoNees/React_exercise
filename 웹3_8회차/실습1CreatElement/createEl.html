@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreateElement 게시판</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <style>
+    li.list-group-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    li.list-group-item p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1>CreateElement 게시판</h1>
+    <div class="card">
+      <div class="card-header">
+        <form class="form-inline" id="form">
+          <div class="form-group mr-sm-3">
+            <label for="inputMsg" class="sr-only">Message</label>
+            <input type="text" class="form-control" id="inputMsg" placeholder="Pls leave msg." />
+          </div>
+          <button class="btn btn-primary" id="btnAdd">Add</button>
+        </form>
+      </div>
+      <ul class="list-group list-group-flush" id="list-group" style="border-top: 0"></ul>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+  /*
+      1. 버튼을 클릭 시에 input에 적은 메세지가 나오게 해주세요.
+      단 li는 list-group-item이라는 클래스를 가지고 있어야 합니다.
+
+      클래스 추가 : document.querySelector('').classList.add('클래스명');
+      클래스 제거 : document.querySelector('').classList.remove('클래스명');
+
+      2. 버튼은 form안에 있을때 기본적으로 새로고침이 발생합니다.
+      이 기능을 제거하려면 클릭이벤트 안에 아래 코드를 입력하세요.
+      document.querySelector('').addEventListener("click", function (e) {
+          e.preventDefault();
+      }
+  
+  */
+
+  var inputMsg = document.querySelector('#inputMsg');
+  var btnAdd = document.querySelector('#btnAdd');
+  var listGroup = document.querySelector('#list-group');
+
+  btnAdd.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    /*
+    if (inputMsg.value === '') {
+      return;
+    }
+    */
+   
+    // inputMsg.value !== ''     !inputMsg.value === ''
+    if (inputMsg.value) {
+      var createEl = document.createElement('li');
+    }
+
+
+
+
+    /*
+    if(document.querySelector('li')) {
+      document.querySelector('li').classList.add('list-group-item');
+      이럴 경우 첫번째 li만 해당 되기 때문에 오답!
+    }
+    */
+
+    createEl.classList.add('list-group-item');
+
+    /*
+      버튼 만드는 방법 2
+    */
+    // createEl.innerText = inputMsg.value;
+    createEl.innerHTML = `<p>${inputMsg.value}</p>
+    <button class='btn btn-danger btn-sm'>삭제</button>`;
+    listGroup.append(createEl);
+
+
+    /*
+      버튼 만드는 방법 1
+
+      var createBtn = document.createElement('button');
+      createBtn.classList.add('btn', 'btn-danger', 'btn-sm');
+      createBtn.innerText = '삭제';
+      createBtn.style.float = 'right';
+      createEl.append(createBtn);
+    */
+
+    var deleteBtn = createEl.querySelector('.btn-danger');
+    deleteBtn.addEventListener('click', function () {
+      this.closest('li').remove(); // 클릭된 li 요소를 삭제
+    });
+
+    inputMsg.value = '';
+
+
+
+
+  })
+</script>
+
+</html>

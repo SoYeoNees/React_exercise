@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+body,
+h1,
+ul,
+h2 p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+body {
+  background-image: url(/실습/images/bg.png);
+  background-attachment: fixed;
+}
+
+.header {
+  background-color: #151515;
+  height: 400px;
+  line-height: 400px;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+.header h1 {
+  font-family: "Fredoka";
+  font-size: 200px;
+  word-spacing: 200px;
+  color: #807776;
+  letter-spacing: -20px;
+  white-space: nowrap;
+}
+
+.header .point {
+  position: relative;
+  top: -400px;
+}
+
+.header:hover h1 {
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.gnb-wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+
+  padding: 20px 0;
+}
+
+.gnb {
+  background-color: #807776;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 30px;
+  padding: 0 20px;
+}
+
+.gnb li {
+  float: left;
+}
+
+.gnb li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border: 5px solid transparent;
+}
+
+.gnb li a:hover {
+  border-bottom: 5px solid #222;
+}
+
+.grid {
+  width: 960px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.grid li {
+  width: 300px;
+  margin: 10px;
+  float: left;
+}
+
+.grid li:nth-child(2),
+.grid li:nth-child(5),
+.grid li:nth-child(8) {
+  /* 첫번째 방법: margin-top: 50px; */
+  position: relative;
+  top: -50px;
+}
+
+.grid li .container {
+  border-bottom: 10px solid #4b260a;
+  /* padding: 20px; */
+  background-color: #93572e;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.grid li .container:before {
+  content: " ";
+  display: block;
+  height: 50px;
+  background-image: url(/실습/images/ac-top.png);
+}
+
+.grid li .container h2 {
+  color: #fff;
+  margin: 20px;
+}
+
+.grid li .container p {
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}

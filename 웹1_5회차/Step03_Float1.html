@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step03_Float1.html</title>
+    <style>
+      /* ie 7버전 이하에서 사용가능하게 만들어주는 코드 */
+      .clearfix {
+        *zoom: 1;
+      }
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .wrap {
+        width: 700px;
+        /* height: auto;  자식의 높이를 그대로 가져감 */
+        background-color: rgb(207, 119, 5);
+        /* 
+            첫번째 방법 = overflow:hidden;
+            두번째 방법 = .clearfix{*zoom:1;}
+        */
+      }
+      .wrap .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(1, 15, 27);
+        float: left;
+      }
+      .wrap .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(42, 249, 31);
+        float: left;
+      }
+      .wrap .box3 {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(204, 71, 231);
+        float: left;
+      }
+      .block {
+        width: 1000px;
+        height: 300px;
+        background-color: rgb(250, 255, 96);
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap clearfix">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+    <div class="block"></div>
+  </body>
+</html>

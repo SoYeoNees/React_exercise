@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_Event1.html</title>
+    <style>
+        #friendList li:hover {
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myBtn">CLICK!!!!!</button>
+    <h1>친구목록</h1>
+    <ul id="friendList">
+        <li>짱구</li>
+        <li>짱아</li>
+        <li>흰둥이</li>
+        <li>철수</li>
+        <li>훈이</li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        /*
+            .on('click')과 .click()의 차이점
+            - 동적으로 이벤트를 바인딩할 수 있는지 없는지 차이
+            - .on('click')동적으로 생성된 태그에 클릭 가능
+            - .on('click')이 메모리 관리에 더 효율적(미리 메모리를 할당하지 않기 때문)
+        */
+        /*
+            $('#myBtn').click(function () {
+                alert('CLICKED!');
+            });
+        */
+
+        $('#myBtn').on('click', function () {
+            alert('CLICKED!');
+        });
+
+        $('#friendList li').on('click', function () {
+            console.log(this);
+            // 클릭된 요소의 텍스트를 CLICKED!로 바꾸고 색상을 파란색으로 변경해보세요.
+            $(this).text('CLICKED!').css('color', 'blue');
+        });
+
+    </script>
+</body>
+
+</html>

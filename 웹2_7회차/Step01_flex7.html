@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_flex7.html</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            /*
+            flex-flow 방향에 따라
+            justify-content와 align-items도 바뀜
+            */
+            flex-flow: row;
+            /*
+            justify-content: flex-start;
+            align-items: center;
+            */
+        }
+
+        .item:nth-child(1) {
+            order: 3;
+        }
+
+        .item:nth-child(2) {
+            order: 1;
+        }
+
+        .item:nth-child(3) {
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flex Container : flex의 영향을 받는 전체공간 -->
+    <div class="container">
+        <!-- Flex Item : flex의 설정된 속성에 따라 배치 -->
+        <div class="item">div1</div>
+        <div class="item">div2</div>
+        <div class="item">div3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Event3.html</title>
+    <style>
+        .box{width: 100px; height: 100px; border: 1px solid red;}
+    </style>
+</head>
+<body>
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    <div class="box">box5</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+$('.box').on('mouseover', function(){
+    // 이벤트가 일어난 그 요소(1개)의 배경색을 yellow로 바꿔보세요.
+    $(this).css('background-color', 'yellow');
+});
+
+/*
+    .box.에 mouseout 이벤트가 일어났을 때
+이벤트가 일어난 그 요소(1개)의 배경색을 white로 바꿔보세요.
+*/
+
+$('.box').on('mouseout', function(){
+    $(this).css('background-color', 'white');
+});
+    </script>
+</body>
+</html>

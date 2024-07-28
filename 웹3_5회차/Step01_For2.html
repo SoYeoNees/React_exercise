@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step01_For2.html</title>
+  </head>
+  <body>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div>div5</div>
+    <div>div6</div>
+    <div>div7</div>
+    <div>div8</div>
+    <div>div9</div>
+    <div>div10</div>
+    <div>div10</div>
+    <div>div10</div>
+    <div>div10</div>
+    <button id="changeBtn">CHANGE</button>
+    <button id="changeBtn2">CHANGE2</button>
+    <script>
+      document
+        .querySelector("#changeBtn")
+        .addEventListener("click", function () {
+          // 모든 div의 innerText를 '짱구'로 바꿔보세요
+          /* document.querySelectorAll("div")[i].innerHTML = "짱구";
+          document.querySelectorAll("div")[1].innerHTML = "짱구";
+          document.querySelectorAll("div")[2].innerHTML = "짱구";
+          document.querySelectorAll("div")[3].innerHTML = "짱구";
+          document.querySelectorAll("div")[4].innerHTML = "짱구";
+          document.querySelectorAll("div")[5].innerHTML = "짱구";
+          document.querySelectorAll("div")[6].innerHTML = "짱구";
+          document.querySelectorAll("div")[7].innerHTML = "짱구";
+          document.querySelectorAll("div")[8].innerHTML = "짱구";
+          document.querySelectorAll("div")[9].innerHTML = "짱구";*/
+          for (var i = 0; i < 10; i++) {
+            document.querySelectorAll("div")[i].innerHTML = "짱구";
+          }
+        });
+
+      document
+        .querySelector("#changeBtn2")
+        .addEventListener("click", function () {
+          var divs = document.querySelectorAll("div");
+          console.log(divs.length);
+          for (var i = 0; i < divs.length; i++) {
+            divs[i].innerHTML = "짱구";
+          }
+        });
+    </script>
+  </body>
+</html>

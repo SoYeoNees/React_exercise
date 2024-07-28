@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Function04.html</title>
+</head>
+
+<body>
+    <script>
+        // object type을 리턴해주는 함수
+        var getMember = function () {
+            /*
+                로그인 시에 로그인 회원을
+                DB에 회원목록과 비교해서
+                그 유저의 정보를 가져와주는 함수
+                db.collection.findOne()......
+            */
+            var mem = {
+                num: 1, name: '짱구', addr: '안양'
+            };
+            return mem;
+        };
+
+        var mem1 = getMember();
+        // 홈페이지 상단에 '짱구'님 반갑습니다.
+        var result = `${mem1.name}님 반갑습니다.`
+        console.log(result);
+
+        // 배열을 리턴해주는 함수
+        var getNums = function () {
+            var nums = [10, 20, 30, 40, 50];
+            // return을 안하면? -> 에러
+            return nums;
+        }
+
+        var numbers = getNums();
+        console.log(numbers[1]);
+    </script>
+</body>
+
+</html>

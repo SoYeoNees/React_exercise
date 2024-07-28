@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_If2.html</title>
+</head>
+
+<body>
+    <button onclick="input()">점수 입력</button>
+    <script>
+        var input = function () {
+            // 점수를 string으로 입력받음
+            var inputNum = prompt('(0~100)점수를 입력하세요', 0);
+            // parseFloat : 소수점도 반환
+            var jumsu = parseFloat(inputNum);
+            console.log(jumsu);
+
+            if (jumsu >= 90) {
+                console.log('A');
+            } else if (jumsu >= 80) {
+                console.log('B');
+            } else if (jumsu >= 70) {
+                console.log('C');
+            } else if (jumsu >= 60) {
+                console.log('D');
+            } else {
+                console.log('F');
+            }
+        }
+    </script>
+</body>
+
+</html>

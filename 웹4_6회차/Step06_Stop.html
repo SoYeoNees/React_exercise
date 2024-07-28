@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step06_Stop.html</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div>div5</div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        /*
+            [ Stop 메서드 ]
+            현재 실행중인 애니메이션을 중지하는 메서드
+        */
+        $('div').on('mouseenter', function () {
+            $(this).stop().animate({ marginLeft: 50 })
+        });
+        $('div').on('mouseleave', function () {
+            $(this).stop().animate({ marginLeft: 0 })
+        });
+    </script>
+</body>
+
+</html>

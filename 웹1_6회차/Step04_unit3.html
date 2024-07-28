@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step04_unit3.html</title>
+    <style>
+      html {
+        font-size: 10px;
+      }
+      #one {
+        font-size: 16px;
+      }
+      #two {
+        font-size: 1rem;
+        /* 
+            [rem] 
+            - 최상위 (html)글자크기의 배수
+        */
+      }
+      #three {
+        font-size: 2rem;
+      }
+      #four {
+        font-size: 3rem;
+      }
+      .box {
+        width: 10rem;
+        height: 10rem;
+        background-color: yellow;
+        margin-left: 5rem;
+        border: 5px solid red;
+      }
+      .wrapper {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>ABCD</p>
+    <p id="one">ABCD : 16px</p>
+    <p id="two">ABCD : 10px</p>
+    <p id="three">ABCD : 20px</p>
+    <p id="four">ABCD : 30px</p>
+    <div class="box"></div>
+    <div class="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

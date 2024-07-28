@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Object3.html</title>
+</head>
+
+<body>
+    <script>
+        var mem1 = {
+            num: 1,
+            name: '짱구',
+            addr: '안양'
+        };
+
+        // 빈 object를 먼저 만들고
+        var mem2 = {};
+        // 나중에 필요한 값을 저장할 수 있다.
+        mem2['num'] = 2;
+        mem2['name'] = '짱아';
+        mem2['addr'] = '서울';
+
+        // mem.name에 저장된 값을 
+        var myName = mem1['name'];
+
+        // mem.name 수정하기
+        mem1['name'] = '철수';
+
+        // 특정 KEY 삭제
+        delete mem1['addr'];
+    </script>
+</body>
+
+</html>

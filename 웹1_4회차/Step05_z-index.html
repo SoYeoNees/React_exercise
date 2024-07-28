@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step05_z-index.html</title>
+    <style>
+        .wrapper {
+            position: relative;
+            border: 1px solid red;
+        }
+        .wrapper img {
+            position: absolute;
+        }
+        #one {
+            top: 100px;
+            left: 100px;
+            /* z-index값이 상대적으로 크면 작은거보다 위에 배치 */
+            z-index: 10;
+        }
+        #two {
+            top: 150px;
+            left: 150px;
+            z-index: 9;
+        }
+        #three {
+            top: 200px;
+            left: 200px;
+            z-index: 8;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img id="one" src="/images/icon01.png" />
+        <img id="two" src="/images/icon02.png" />
+        <img id="three"src="/images/icon03.png" />
+    </div>
+
+</body>
+</html>

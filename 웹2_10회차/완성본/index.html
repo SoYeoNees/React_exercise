@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel</title>
+    <!-- RESET -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- FONT -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ad390766c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--
+      1. 구글에 [responsive navbar dropdown]을 검색하여 코드를 가져오고 완성본에 맞게 커스터마이징 해보세요.
+      https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+    -->
+    <!-- START header -->
+    <header class="clearfix">
+      <div class="logo">
+        <a href="#"><img src="img/logo.png" alt="로고 이미지" /></a>
+      </div>
+
+      <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+        <div class="mobile-nav">
+          <a class="menu" href="#">About</a>
+          <a class="menu" href="#" class="active">Home</a>
+          <a class="menu" href="#">News</a>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a class="menu" href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+    <!-- END header -->
+
+    <!--
+      2. VIDEO 영역을 만들어보세요.
+    -->
+    <!-- START main 비디오 배경 -->
+    <section id="main-banner">
+      <div class="video">
+        <video loop autoplay muted class="html-video main-video">
+          <!-- controls 클래스 추가하면 콘트롤러 생성-->
+          <source type="video/mp4" src="img/video.mp4" />
+        </video>
+      </div>
+    </section>
+    <!-- END main 비디오 배경 -->
+
+    <!--
+      3. TEXT 영역을 만들어보세요.
+    -->
+    <!-- START Text 영역 -->
+    <section id="section01" class="section">
+      <div class="container">
+        <div class="wrapper">
+          <div class="title">
+            <h3>Lorem ipsum dolor</h3>
+          </div>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />Voluptate
+              ab deserunt dolor vitae, soluta explicabo.
+            </p>
+          </div>
+          <div class="button">
+            <a href="#">CLICK<i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="svg-wrap">
+        <div class="mask-box mask-box1">
+          <svg viewbox="0 0 300 270">
+            <defs>
+              <mask id="photo-mask1">
+                <polygon fill="#fff" points="0,1.4 300,118.3 142,270 " />
+              </mask>
+            </defs>
+            <image mask="url(#photo-mask1)" xlink:href="img/slide01.png" />
+          </svg>
+        </div>
+        <div class="mask-box mask-box2">
+          <svg viewbox="0 0 300 270">
+            <defs>
+              <mask id="photo-mask2">
+                <polygon fill="#fff" points="0,169.1 300,0 142,270 " />
+              </mask>
+            </defs>
+            <image mask="url(#photo-mask2)" xlink:href="img/slide02.png" />
+          </svg>
+        </div>
+        <div class="line-box">
+          <svg viewbox="0 0 800 500">
+            <circle
+              cx="400"
+              cy="250"
+              r="100"
+              stroke="#ffb3bc"
+              stroke-width="5"
+              fill="transparent"
+            ></circle>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- END Text 영역 -->
+
+    <!--
+      4. 인물 이미지 영역을 만들어보세요.
+    -->
+    <!-- START 인물LINK영역 -->
+    <section id="section02" class="section">
+      <div class="container">
+        <div class="wrapper">
+          <ul class="hero-box">
+            <li class="item">
+              <a class="hero-link" href="#">
+                <div class="black-cover"></div>
+                <div class="hero-txt">
+                  <h5>IRONMAN</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing sit amet
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="hero-link" href="#">
+                <div class="black-cover"></div>
+                <div class="hero-txt">
+                  <h5>IRONMAN</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing sit amet
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="item">
+              <a class="hero-link" href="#">
+                <div class="black-cover"></div>
+                <div class="hero-txt">
+                  <h5>IRONMAN</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing sit amet
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- END 인물LINK영역 -->
+
+    <!--
+      5. 아이콘 영역을 만들어보세요.
+    -->
+    <!-- START ICON 영역 -->
+    <section id="section03" class="section">
+      <div class="black-cover"></div>
+      <div class="container">
+        <div class="wrapper">
+          <ul class="icon-box">
+            <li class="icon-item"><img src="img/icon01.png" /></li>
+            <li class="icon-item"><img src="img/icon02.png" /></li>
+            <li class="icon-item"><img src="img/icon03.png" /></li>
+            <li class="icon-item"><img src="img/icon04.png" /></li>
+          </ul>
+          <ul class="icon-box">
+            <li class="icon-item"><img src="img/icon02.png" /></li>
+            <li class="icon-item"><img src="img/icon03.png" /></li>
+            <li class="icon-item"><img src="img/icon04.png" /></li>
+            <li class="icon-item"><img src="img/icon05.png" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- END ICON 영역 -->
+
+    <!-- FOOTER 영역 -->
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <h6>Copyright by SBS ACADEMY Seik Park.</h6>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    //마우스 우클릭을 했을때 브라우저 기본 이벤트 제어 (우클릭 방지)
+    if (window.addEventListener) {
+      window.addEventListener(
+        "contextmenu",
+        function (e) {
+          try {
+            if (typeof e != "undefined") {
+              e.preventDefault();
+              return false;
+            } else {
+              return false;
+            }
+          } catch (e) {}
+        },
+        false
+      );
+    } else {
+      window.attachEvent("oncontextmenu", function (e) {
+        try {
+          if (typeof e != "undefined") {
+            e.preventDefault();
+            return false;
+          } else {
+            return false;
+          }
+        } catch (e) {}
+      });
+    }
+    var handlemouseEvent = function (e) {
+      console.log(e);
+      try {
+        if (typeof e == "undefined") {
+          if (window.event.button && window.event.button == "2") {
+            return false;
+          }
+        } else if ((e.which && e.which == 3) || (e.button && e.button == 2)) {
+          e.preventDefault();
+          return false;
+        } else if (e.keyCode == 123) {
+          //F12방지
+          e.preventDefault();
+          return false;
+        } else if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+          //F12방지
+          e.preventDefault();
+          return false;
+        }
+      } catch (e) {}
+    };
+    window.onkeydown = handlemouseEvent;
+    window.onkeyup = handlemouseEvent;
+  </script>
+</html>

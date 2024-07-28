@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Selector1.html</title>
+    <!-- jQuery로딩 시키기 -->
+    <script src="/js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div>div1</div>
+    <div class="divClass">div2</div>
+    <div class="divClass">div3</div>
+    <div class="divClass">div4</div>
+    <div id="one">div5</div>
+    <script>
+        // 요소명으로 선택해서 css조작
+        $('div').css('color', 'red');
+        // 클래스명으로 선택해서 css조작
+        $('.divClass').css('background-color', 'yellow');
+        // 아이디로 선택해서 css 조작
+        $('#one').css('font-weight', 'bold');
+        /*
+        
+            [1] 프레임워크 - 리액트
+            일정한 형태의 틀에 맞추어 결과물을 만들도록 하는 것
+            소프트웨어의 구체적인 부분에 해당하는 설계와 구현을 재사용이 가능하게끔
+            일련의 협업화된 형태로 제공
+
+            [2] 라이브러리 - 제이쿼리
+            자주 사용되는 로직(코드)을 재사용하기 편리하도록 잘 정리한 일련의 코드들의 집합
+
+            [3] 플러그인 - 슬라이드 기능
+            어떤 특정한 하나의 기능을 해결하기 위한 조합
+
+
+            <라이브러리, 프레임워크 차이>
+            제어 흐름에 대한 주도성이 누구에게 / 어디에 있는가
+            프레임워크는 가져다가 사용한다기 보다는 거이에 들어가서 사용한다는 느낌
+            라이브러리는 라이브러리를 가져다가 사용하고 호출하는 측에 주도성이 있음
+
+        */
+    </script>
+</body>
+
+</html>

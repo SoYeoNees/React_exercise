@@ -1,0 +1,269 @@
+/*
+	1. background색을 원하는 색으로 넣어주세요.
+
+	2. 새의 몸통을 원하는대로 꾸며주세요.
+	- 센터정렬하면서 중앙보다 살짝 더 아래 위치하게 해주세요.
+
+*/
+
+body {
+  background-color: rgb(161, 242, 160);
+}
+
+.bird {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(140, 235, 232);
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  animation: fly 2s ease-out infinite alternate;
+}
+
+.bird .feather01 {
+  width: 25px;
+  height: 60px;
+  background-color: green;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -50px;
+  border-radius: 15px 0 15px 0;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+}
+
+.bird .feather02 {
+  width: 25px;
+  height: 60px;
+  background-color: yellow;
+
+  position: absolute;
+  left: -30px;
+  right: 0;
+  margin: auto;
+  top: -50px;
+  border-radius: 15px 0 15px 0;
+  border-top: 5px solid pink;
+  border-right: 5px solid pink;
+
+  transform: rotateZ(-30deg);
+  transform-origin: bottom;
+}
+
+.bird::before {
+  content: " ";
+  display: block;
+
+  width: 25px;
+  height: 60px;
+  background-color: pink;
+
+  position: absolute;
+  left: 30px;
+  right: 0;
+  margin: auto;
+  top: -50px;
+  border-radius: 15px 0 15px 0;
+  border-top: 5px solid yellow;
+  border-right: 5px solid yellow;
+
+  transform: rotateZ(30deg);
+  transform-origin: bottom;
+}
+
+.bird .eye:before {
+  content: "";
+  display: inline-block;
+
+  width: 24px;
+  height: 4px;
+  background-color: black;
+
+  position: relative;
+  top: -16px;
+  left: -4px;
+}
+
+.bird .eye {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  display: inline-block;
+  margin: 40px 28px;
+}
+
+.bird .mouth {
+  width: 0;
+  height: 0;
+  border: 20px solid orange;
+  margin: 0 auto;
+
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+
+  border-color: orange transparent transparent transparent;
+  position: relative;
+  top: 0;
+  border-bottom: 10px dotted red;
+}
+
+.bird .wing {
+  width: 70px;
+  height: 100px;
+  background-color: orange;
+  position: absolute;
+  top: 60px;
+
+  animation: wing 0.3s ease infinite reverse;
+}
+
+.bird .wing.left {
+  left: 0;
+  border-radius: 0 50px 0 50px;
+
+  transform-origin: left top;
+  transform: rotateY(180deg);
+
+  box-shadow: 0 10px 0 0 yellow;
+}
+
+.bird .wing.right {
+  right: 0;
+  border-radius: 50px 0 50px 0;
+
+  transform-origin: right top;
+  transform: rotateY(180deg);
+  box-shadow: 0 10px 0 0 yellow;
+}
+
+.bird:after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 80px;
+  background-color: white;
+
+  border-radius: 100% 100% 0 0;
+  position: relative;
+  top: 20px;
+  left: 60px;
+}
+
+.cloud div {
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+
+  animation: cloud 1s ease-out infinite alternate;
+}
+
+.cloud div:nth-child(1) {
+  width: 220px;
+  height: 220px;
+
+  margin-left: -150px;
+}
+
+.cloud div:nth-child(2) {
+  width: 234px;
+  height: 234px;
+  margin-left: -30px;
+}
+
+.cloud div:nth-child(3) {
+  width: 228px;
+  height: 228px;
+
+  margin-left: 100px;
+}
+
+.cloud01 div {
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+
+  position: absolute;
+  bottom: 100;
+  left: 0;
+  right: 0;
+
+  animation: cloud01 1s ease-out infinite alternate;
+}
+
+.cloud01 div:nth-child(1) {
+  width: 20px;
+  height: 20px;
+  margin-left: -150px;
+}
+
+.cloud01 div:nth-child(2) {
+  width: 34px;
+  height: 34px;
+  margin-left: -30px;
+}
+
+.cloud01 div:nth-child(3) {
+  width: 28px;
+  height: 28px;
+
+  margin-left: 100px;
+}
+
+@keyframes fly {
+  0% {
+    bottom: -150px;
+  }
+
+  100% {
+    bottom: 800px;
+  }
+}
+
+@keyframes wing {
+  0% {
+    transform: rotateY(-180deg);
+  }
+
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes cloud01 {
+  0% {
+    bottom: -150px;
+  }
+
+  100% {
+    bottom: 900px;
+  }
+}

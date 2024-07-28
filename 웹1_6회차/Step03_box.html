@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step03_box.html</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(118, 34, 235);
+      border: 10px solid rgb(237, 118, 118);
+      padding: 10px;
+      margin: 10px;
+      /*
+            box-sizing
+            content-box | border-box
+
+            border-box : width와 height에
+            padding과 border를 포함
+        */
+      box-sizing: border-box;
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(205, 170, 253);
+      border: 10px solid red;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">box</div>
+  <div class="box2">box</div>
+</body>
+
+</html>

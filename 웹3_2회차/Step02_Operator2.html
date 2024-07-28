@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Operator2.html</title>
+</head>
+
+<body>
+    <script>
+        /*
+            [ 논리 연산자 ]
+            - 논리값(true, false)을 계산해주는 연산자
+    
+            && : and 연산자
+            || : or 연산자
+            ! : not 연산자
+        */
+
+        // and 연산은 연산에 참여하는 boolean값이 모두 true 일 때
+        // 결과는 true
+        var result1 = false && false; // false
+        var result2 = false && true; // false
+        var result3 = true && false; // false
+        var result4 = true && true; // true
+
+        // or 연산은 연산에 참여하는 boolean값이 어느 하나만 true이면
+        // 결과는 true : 또는
+        var result5 = false || false; // false
+        var result6 = false || true; // true
+        var result7 = true || false; // true
+        var result8 = true || true; // true
+
+        // not 연산은 boolean값을 반전 시킨다.
+        var result9 = !false; // true
+        var result10 = !true; // false
+
+        var isRun = true;
+        if (isRun) {
+            console.log('달리는중')
+        }
+    </script>
+</body>
+
+</html>

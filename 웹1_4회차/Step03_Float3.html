@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_Float3.html</title>
+    <style>
+        .wrapper {
+            border: 1px solid blue;
+            background-color: rgb(245, 68, 95);
+            /*높이 값을 잃었을 때
+            1. 첫 번째 방법 : 부모에게 직접 높이값 주기*/
+            /*height: 200px;*/
+            
+            /* 2. float된 자식 요소를 감쌀 수 있도록 설정*/
+            overflow: auto;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 1px solid rgb(0, 128, 255);
+            float: left;
+        }
+        p {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">div1</div>
+        <div class="box">div2</div>
+        <div class="box">div3</div>
+        <div class="box">div4</div>
+        <div class="box">div5</div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio fugiat tempore id! Cum sint fugiat totam voluptatum voluptas magni natus placeat reprehenderit magnam asperiores voluptatibus, dolorem, eaque maxime suscipit vero.</p>
+</body>
+</html>

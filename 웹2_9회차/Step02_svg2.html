@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step02_svg2.html</title>
+  </head>
+  <body>
+    <svg
+      class="weather"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+    >
+      <style>
+          <![CDATA[
+        .weather {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 200px;
+          margin: auto;
+          background-color: #eee;
+        }
+
+        .cloud {
+          fill: skyblue;
+        }
+
+        .img {
+          fill: orangered;
+          transform-origin: 27.49px 54.8px;
+          animation: w-ani 0.5s infinite alternate;
+        }
+
+        .sun {
+          fill: rgb(228, 91, 76);
+          transform-origin: 27.49px 54.8px;
+          animation: w-ani 0.8s infinite alternate;
+        }
+
+        .line {
+          stroke: orangered;
+          transform-origin: 27.49px 54.8px;
+          animation: w-ani 0.8s infinite alternate;
+        }
+
+        @keyframes w-ani {
+          0% {
+            transform: scale(0.9);
+          }
+          100% {
+            transform: scale(1.1);
+          }
+        }
+        ]]>
+      </style>
+      <circle class="img" cx="20.54" cy="46.03" r="9.83" />
+      <circle class="img" cx="51.63" cy="47.09" r="9.83" />
+      <ellipse class="img" cx="34.49" cy="56.91" rx="14.86" ry="13.11" />
+      <circle class="eye" cx="27.49" cy="54.8" r="1.46" />
+      <circle class="eye" cx="41.8" cy="55.46" r="1.46" />
+      <path
+        class="st1"
+        d="M27,61.44L30.37,64l4.11-2.11C37,64.56,37,64,37,64c4.22-2.11,4.11-1.25,4.11-1.25"
+      />
+      <path class="st1" d="M37,64.56" />
+      <path class="st1" d="M41.89,52.83" />
+      <circle class="sun" cx="74.56" cy="24.11" r="8" />
+      <line class="line" x1="82.56" y1="17.35" x2="88.67" y2="13.24" />
+      <line class="line" x1="59.22" y1="30.94" x2="65.33" y2="26.83" />
+    </svg>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Position2.html</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .spacer {
+            height: 500px;
+            background-color: rgb(61, 36, 57);
+        }
+        #one {
+            /* 현재 위치 기준 : top: 0px; left: 0px; */
+            position: relative;
+            top: 150px; /* 위에서 떨어진 거리 (y좌표) | 음수값도 가능 */
+            left: 150px; /* 왼쪽에서 떨어진 거리 (x좌표) | 음수값도 가능 */
+        }
+        #two {
+            /* 
+            <layer2에 있다고 보면 됨>
+            1. 절대 좌표에 배치 (독립적)
+            2. 특정 요소 기준
+            - 선택x:html
+            - 부모 요소에 relative가 지정되어 있으면 그 부모를 기준으로 함
+            */
+            position: absolute; /* left와 top 기재 필수 */
+            left: 50px;
+            top: 50px;
+        }
+        #three {
+            /* 
+            <layer2에 있다고 보면 됨>
+            스크롤에 따라오는 절대 좌표에 배치 (독립적)
+            */
+            position: fixed;
+            left: 150px;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">static</div>
+    <div class="box" id="one">relative</div>
+    <div class="spacer"></div>
+    <div class="box" id="two">absolute</div>
+    <div class="box">비교</div>
+    <div class="box" id="three">fixed</div>
+</body>
+</html>

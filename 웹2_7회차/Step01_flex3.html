@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_flex3.html</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            width: 800px;
+            display: flex;
+
+            /*
+                [ flex-wrap ]
+                - item의 줄바꿈을 결정하는 속성
+                nowrap | wrap | wrap-reverse
+            */
+
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flex Container : flex의 영향을 받는 전체공간 -->
+    <div class="container">
+        <!-- Flex Item : flex의 설정된 속성에 따라 배치 -->
+        <div class="item">div1</div>
+        <div class="item">div2</div>
+        <div class="item">div3</div>
+    </div>
+</body>
+
+</html>

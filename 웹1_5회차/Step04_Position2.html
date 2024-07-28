@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step04_Position1.html</title>
+    <style>
+      html,
+      body {
+        position: relative;
+      }
+      .wrapper {
+        background-color: yellow;
+        width: 400px;
+        height: 2000px;
+        margin: 0 auto;
+      }
+      .box {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+      #box1 {
+        left: 0;
+        top: 0;
+      }
+      #box2 {
+        right: 0;
+        top: 0;
+      }
+      #box3 {
+        left: 0;
+        bottom: 0;
+      }
+      #box4 {
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="box1" class="box">div1</div>
+      <div id="box2" class="box">div2</div>
+      <div id="box3" class="box">div3</div>
+      <div id="box4" class="box">div4</div>
+    </div>
+  </body>
+</html>

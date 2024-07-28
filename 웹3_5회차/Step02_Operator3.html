@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step02_Operator3.html</title>
+  </head>
+  <body>
+    <input type="text" id="age" />
+    <button onclick="myFunc()">CLCIK</button>
+    <p id="demo"></p>
+    <script>
+      /*
+            1.
+            삼항연산자를 이용하여 input에 넣은 숫자가
+
+            20미만이면 '미성년자 입니다.'
+            20이상이면 '성인입니다.'
+
+            2.
+            if 문을 이용하여 input에 number 데이터타입이 아닌
+            다른 데이터타입을 넣으면 ERROR가 뜨게 만드세요.
+
+            숫자인지 판별해주는 함수
+            in(isNan(변수명)){}
+        */
+      function myFunc() {
+        var inputNum = document.querySelector("#age");
+        var num = parseInt(age.value);
+        var inputNum =
+          num < 20 ? console.log("미성년자 입니다") : console.log("성인입니다");
+      }
+
+      function myFunc() {
+        var ageValue = parseInt(document.getElementById("age").value);
+        var ageResult = age < 20? '미성년자입니다.' : '성인입니다.'
+        if(isNan(ageValue)){
+          ageResult='ERROR';
+        }else{ageValue < 20 ? '미성년자입니다.' : '성인입니다.';}
+        document.getElementById('ageValue') = 'ageResult'}
+    </script>
+  </body>
+</html>

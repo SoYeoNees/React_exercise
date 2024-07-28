@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Operator4.html</title>
+</head>
+
+<body>
+    <script>
+        /*
+            [ 비교 연산자 ]
+            - 비교 연산의 결과는 boolean type data로 나타난다.
+
+            == : 같은지 비교
+            != : 다른지 비교
+            > : 큰지 비교
+            >= : 크거나 같은지 비교
+            < : 작은지 비교
+            <= : 작거나 같은지 비교        
+        */
+
+        var isEqual = 10 == 10; // true
+        var isDifferent = 10 != 10; // false
+        var isGreater = 10 > 1; // true
+        var isBiggerOrEqual = 10 >= 1; // true
+        var isSmaller = 10 < 1; // false
+        var isSmallerOrEqual = 10 <= 1; // false
+
+        /*
+            [ 비교연산자로 주로 하는 작업 ]
+            1. 문자열의 내용 비교
+            2. 숫자의 크기 비교
+            3. 숫자가 같은지 비교
+        */
+
+        var name1 = '짱구';
+        var name2 = '짱아';
+
+        var result1 = name1 == name2; // false
+        var result2 = name1 != name2; // true
+        var result3 = name1 == '짱구'; // true
+        var result4 = name1 != '짱구'; // flase
+    </script>
+</body>
+
+</html>

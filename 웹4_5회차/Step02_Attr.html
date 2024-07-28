@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Attr.html</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+        .active {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">CLICK</a>
+    <input type="text" />
+    <div class="box">box</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $('a').attr('href', 'http://www.naver.com') // attribute 바꾸기
+        console.log($('a').attr('href')); // attribute 가져오기
+
+        // input의 타입을 비밀번호로 바꿔보세요.
+        $('input').attr('type', 'password')
+        console.log($('input').attr('type'));
+
+        // box가 파란색이 되도록 바꿔보세요.(대신 width height는 유지되어야 함)
+        // $('div').attr('class', 'box active')
+        $('div').attr('style', 'background:blue')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step01_browser4.html</title>
+  </head>
+  <body>
+    <script>
+      /*
+            [ location ]
+            - 브라우저의 현재 URL 주소값에 대한 정보를 제공하는 객체
+
+            location.host --- 주소창 URL에서 도메인명을 반환(포트번호까지 취득)
+        */
+
+      document.write(`도메인명&포트번호 : ${location.host}<br/>`);
+      document.write(`도메인명 : ${location.hostname}<br/>`);
+      document.write(`URL : ${location.href}<br/>`);
+      document.write(`정보 : ${location.pathname}<br/>`);
+      document.write(`포트번호 : ${location.port}<br/>`);
+      document.write(`프로토콜 : ${location.protocol}<br/>`);
+      document.write(`#뒤에오는문자열 : ${location.hash}<br/>`);
+    </script>
+  </body>
+</html>

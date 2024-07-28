@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Effect3.html</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <button id="hideBtn">숨기기</button>
+    <button id="showBtn">보이기</button>
+    <button id="toggleBtn">토글</button>
+    <div class="box"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+       $('#hideBtn') .on('click', function(){
+        $('.box').slideUp(1000, function(){
+            alert('slideUp!')
+        })
+       })
+
+       $('#showBtn') .on('click', function(){
+        $('.box').slideDown(1000, function(){
+            alert('slideDown!')
+        })
+       })
+
+       $('#toggleBtn') .on('click', function(){
+        $('.box').slideToggle(1000, function(){
+            alert('slideToggle!')
+        })
+       })
+    </script>
+</body>
+</html>

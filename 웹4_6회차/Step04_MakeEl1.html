@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_MakeEl1.html</title>
+    <style>
+        .active {
+            color: red;
+        }
+
+        #one {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper"></div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $('<img>')
+            .attr('src', '/images/icon01.png')
+            .attr('title', '마리오 이미지')
+            .appendTo('.container');
+
+        var div = $('<div>').text('마리오').addClass('active').attr('id', 'one');
+
+        $('.wrapper').append(div)
+    </script>
+</body>
+</body>
+
+</html>

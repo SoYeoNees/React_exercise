@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step04_3DTransform.html</title>
+    <style>
+      .wrapper {
+        /* 컨텐츠와 내 시선 사이의 거리 */
+        perspective: 500px;
+        /* .wrapper에서의 시선의 위치 (원점) */
+        perspective-origin: 50% 50%;
+        border: 1px solid blue;
+      }
+      .target {
+        /* 3d transform을 하겠다고 선언 */
+        transform-style: preserve-3d;
+        /* .target에서 x,y,z축이 만나는 위치 */
+        transform-origin: 50% 50%;
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid green;
+        transition: transform 0.5s ease-out;
+      }
+      #one:hover {
+        transform: rotateX(45deg);
+      }
+      #two:hover {
+        transform: rotateY(45deg);
+      }
+      #three:hover {
+        transform: rotateZ(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="target" id="one">
+        <img src="/images/icon01.png" />
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="target" id="two">
+        <img src="/images/icon02.png" />
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="target" id="three">
+        <img src="/images/icon03.png" />
+      </div>
+    </div>
+  </body>
+</html>

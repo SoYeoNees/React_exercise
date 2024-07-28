@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_Width.html</title>
+    <style>
+        .wrapper {width: 100px;height: 100px;background: red;}
+        .box {
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            margin: 10px;
+            background: yellow;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box"></div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        /*
+            innerWidth는 패딩까지 포함한 width
+            outerWidth는 border까지 포함한 width
+        */
+        var width = $('.box').width();
+        var innerWidth = $('.box').innerWidth();
+        var outerWidth = $('.box').outerWidth();
+
+        $('.box').text(`${width}, ${innerWidth}, ${outerWidth}`);
+    </script>
+</body>
+</html>

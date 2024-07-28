@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Position.html</title>
+    <style>
+        body { margin:0; padding:0; }
+        .wrapper {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            position: relative;
+            left:200px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position:absolute;
+            left:50px;
+            top:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box"></div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        /*
+            [ position 메서드 ]
+            부모를 기준으로 요소가 위치한 x, y 좌표값을 구해주는 메서드
+        */
+        var boxPos = $('.box').position();
+        console.log(boxPos);
+        $('.box').text(`Left : ${boxPos.left}, Top : ${boxPos.top}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step05_Background2.html</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        border: 5px solid blue;
+      }
+      #box1 {
+        background-image: url(/images/icon01.png);
+        background-repeat: no-repeat;
+        background-size: 1000px 400px;
+      }
+      #box2 {
+        background-image: url(/images/icon01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #box3 {
+        background-image: url(/images/icon02.png);
+        background-attachment: scroll;
+      }
+      #box4 {
+        background-image: url(/images/icon02.png);
+        background-attachment: fixed;
+      }
+      #box5 {
+        background: green;
+      }
+      #box6 {
+        background: url(/images/icon01.png);
+      }
+      #box7 {
+        background: url(/images/icon03.png) no-repeat scroll center;
+      }
+      #box8 {
+        background: url(/images/icon03.png) no-repeat center;
+      }
+      #box9 {
+        background: url(/images/icon03.png) fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+    <div class="box" id="box7"></div>
+    <div class="box" id="box8"></div>
+    <div class="box" id="box9"></div>
+  </body>
+</html>

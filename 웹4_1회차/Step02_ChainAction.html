@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_ChainAction.html</title>
+</head>
+
+<body>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div id="one">div5</div>
+    <input type="text" id="two">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        // chain형태로 연속동작가능
+        $('div').text('hello').css('color', 'red');
+
+        // 순서가 중요하다
+        // $('div').first().text('First!');
+        $('div').text('First!').first();
+
+        // 같은 동작명이지만 기능이 반대인 동작이 있다.
+        $('#one').text('SBS'); // text값 넣어주기
+        var result = $('#one').text(); // text값 읽어오기
+        console.log(result);
+
+        $('#two').val('안녕하세요.'); // value값 넣어주기
+        var result2 = $('#two').val(); // value값 읽어오기
+        console.log(result2);
+
+        // css background-color 값 넣어주기 -> inline css로 넣어짐 
+        $('div:last').css('background-color', '#999');
+
+        // css background-color 값 읽어오기
+        var result3 = $('div:last').css('background-color');
+        console.log(result3);
+    </script>
+</body>
+
+</html>

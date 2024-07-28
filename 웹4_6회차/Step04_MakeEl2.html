@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_MakeEl2.html</title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="printBtn">CLICK</button>
+        <ul id="friendList">
+
+
+        </ul>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        var names = ['짱구', '짱아', '흰둥이'];
+        /*
+            #printBtn을 클릭하였을 때
+            names 배열에 있는 내용을 각각 li의 text로 출력하고
+            li를 ul에 추가해보세요.
+        */
+        $('#printBtn').on('click', function () {
+            // $('<li>').text(names[0]).appendTo('#friendList');
+            // $('<li>').text(names[1]).appendTo('#friendList');
+            // $('<li>').text(names[2]).appendTo('#friendList');
+
+            // appendTo
+            /*
+            for (var i = 0; i < names.length; i++) {
+                $('<li>').text(names[i]).appendTo('#friendList');
+            }
+            */
+
+            // append
+            /*
+            for (var i = 0; i < names.length; i++) {
+                var li = $('<li>').text(names[i]);
+                $('#friendList').append(li);
+            }
+            */
+
+            // for Each
+            /*
+            names.forEach(function (item) {
+                var li = $('<li>').text(item);
+                $('#friendList').append(li);
+            })
+            */
+
+            // each
+            $(names).each(function () {
+                var li = $('<li>').text(this);
+                $('#friendList').append(li);
+            })
+        })
+    </script>
+</body>
+
+</html>

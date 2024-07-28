@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step03_Float5.html</title>
+  <link rel="stylesheet" href="/css/reset.css" />
+  <style>
+    .box {
+      width: 1000px;
+      margin: 0 auto;
+      overflow-x: hidden;
+    }
+
+    .header {
+      width: 1000px;
+      height: 100px;
+      background-color: rgb(63, 69, 67);
+
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .snb {
+      width: 200px;
+      height: 700px;
+      background-color: rgb(54, 210, 158);
+      float: inline-start;
+      margin: 20px 0 30px 0;
+
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contents {
+      width: 790px;
+      height: 700px;
+      background-color: rgb(202, 210, 54);
+      float: inline-end;
+      margin: 20px 0 30px 10px;
+
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom-list1 {
+      width: 330px;
+      height: 130px;
+      background-color: rgb(210, 54, 210);
+      float: inline-start;
+      margin: 0 0 20px 0;
+    }
+
+    .bottom-list2 {
+      width: 330px;
+      height: 130px;
+      background-color: rgb(210, 54, 210);
+      float: inline-start;
+      margin: 0 5px 20px 5px;
+
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .bottom-list3 {
+      width: 330px;
+      height: 130px;
+      background-color: rgb(210, 54, 210);
+      float: inline-end;
+      margin: 0 0 20px 0;
+    }
+
+    .box .footer {
+      width: 1000px;
+      height: 50px;
+      background-color: rgb(63, 69, 67);
+      float: inline-start;
+
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="box clearfix">
+      <div class="header"></div>
+      <div class="snb"></div>
+      <div class="contents"></div>
+      <div class="bottom-list1"></div>
+      <div class="bottom-list1"></div>
+      <div class="bottom-list3"></div>
+      <div class="footer"></div>
+    </div> -->
+
+  <div class="box clearfix">
+
+    <div class="header">HEADER</div>
+
+    <div>
+      <div class="snb">SNB</div>
+      <div class="contents">CONTENTS</div>
+    </div>
+
+    <div>
+      <div class="bottom-list1"></div>
+      <div class="bottom-list2">BOTTOM-LIST</div>
+      <div class="bottom-list3"></div>
+    </div>
+
+    <div class="footer">FOOTER</div>
+
+  </div>
+</body>
+
+</html>

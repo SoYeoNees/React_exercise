@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_If8.html</title>
+</head>
+
+<body>
+    <input type="text" id="inputNum" />
+    <button onclick="test()">CLICK</button>
+    <div id="result"></div>
+
+    <script>
+        var test = function () {
+            /*
+                input에 숫자를 입력하고 CLICK 버튼을 눌렀을 때
+                입력한 수가
+                양수면 #result '양수'
+                음수면 #result '음수'
+                0이면 #result '0'
+                그 외 #result 'ERROR'
+            */
+
+            // 1. 입력한 input 값을 읽어온다.
+            var inputNum = document.querySelector('#inputNum');
+
+            // 2. string을 number type으로 변경한다.
+            var num = parseInt(inputNum.value);
+
+
+            // 3. if문으로 판별한다.
+            if (num > 0) {
+                document.querySelector('#result').innerHTML = "양수";
+            } else if (num < 0) {
+                document.querySelector('#result').innerHTML = "음수";
+            } else if (num == 0) {
+                document.querySelector('#result').innerHTML = "0";
+            } else {
+                document.querySelector('#result').innerHTML = "ERROR";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

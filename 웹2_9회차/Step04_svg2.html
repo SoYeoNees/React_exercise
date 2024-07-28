@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step04_svg2.html</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #a781a9;
+      }
+      text {
+        font-size: 1.5em;
+        font-weight: bold;
+        fill: red;
+      }
+      path {
+        stroke: blue;
+      }
+      .special {
+        fill: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <svg class="svg">
+      <!-- 나중에 참조할 그래픽 요소를 담아놓은 태그 -->
+      <defs>
+        <!-- path에 반드시 id 넣어주기 -->
+        <path
+          id="text-curve"
+          d="M 50 400 C 50 400, 200 500, 400 400 C 400 400, 600 170, 700 300"
+        ></path>
+      </defs>
+      <text x="20" y="50">
+        <!-- # 꼭 넣어주기 -->
+        <textPath href="#text-curve">
+          Lorem
+          <tspan class="special">ipsum</tspan>
+          dolor, sit amet consectetur adipisicing elit. Quisquam ratione
+          adipisci quis aliquid saepe dolorem vitae facere dicta, consequuntur
+          ipsam, fugit eaque beatae dolore tenetur nemo, reiciendis optio. Cum,
+          ad.
+        </textPath>
+      </text>
+    </svg>
+  </body>
+</html>

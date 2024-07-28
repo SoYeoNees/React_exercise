@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Grid3.html</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        .container {
+            display: grid;
+            /*
+                repeat(반복횟수, 반복값)
+                minmax : 최소100px / 최대 auto(자동으로 늘어나게)
+            */
+            grid-template-rows: repeat(3, minmax(100px auto));
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quas reiciendis! Possimus,
+            nobis atque asperiores sequi dignissimos optio nostrum sint, </div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+</body>
+
+</html>

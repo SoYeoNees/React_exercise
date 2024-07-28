@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Array2.html</title>
+</head>
+
+<body>
+    <div id="dv1">div1</div>
+    <div id="dv2">div2</div>
+    <div id="dv3">div3</div>
+    <div id="dv4">div4</div>
+    <div id="dv5">div5</div>
+    <button onclick="change()" onmouseout="recover()">CHANGE</button>
+
+    <script>
+        var names = ['짱구', '짱아', '흰둥이', '철수', '훈이'];
+
+        // 클릭 시에 names 배열의 이름이 각각의 div에 들어가게 해보세요.
+        var change = function () {
+            document.querySelector('#dv1').innerText = names[0];
+            document.querySelector('#dv2').innerText = names[1];
+            document.querySelector('#dv3').innerText = names[2];
+            document.querySelector('#dv4').innerText = names[3];
+            document.querySelector('#dv5').innerText = names[4];
+        }
+
+        // 마우스아웃 시에 각각의 div가 다시 div1, div2, ...로 돌아오게 해보세요.
+        var recover = function () {
+            document.querySelector('#dv1').innerText = 'div1';
+            document.querySelector('#dv2').innerText = 'div2';
+            document.querySelector('#dv3').innerText = 'div3';
+            document.querySelector('#dv4').innerText = 'div4';
+            document.querySelector('#dv5').innerText = 'div5';
+        }
+    </script>
+</body>
+
+</html>

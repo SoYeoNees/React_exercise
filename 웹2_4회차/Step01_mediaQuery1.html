@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step01_mediaQuery1.html</title>
+    <style>
+      .info {
+        display: none;
+      }
+
+      .spacer {
+        height: 100px;
+        background-color: rgb(77, 113, 101);
+      }
+      /*
+        [ 반응형 ]
+        @media(반응할 사이즈){
+            div{ css 속성 }
+        }
+      */
+      @media (min-width: 768px) {
+        .info {
+          display: block;
+        }
+
+        .spacer {
+          height: 200px;
+          background-color: rgb(224, 2, 135);
+        }
+      }
+
+      @media (min-width: 992px) {
+        .spacer {
+          background-color: rgb(42, 165, 140);
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="info">현재 decice의 폭은 최소 768px 이상입니다.</p>
+      <div class="spacer">device 폭이 768px을 기준으로 색상이 변합니다.</div>
+    </div>
+  </body>
+</html>

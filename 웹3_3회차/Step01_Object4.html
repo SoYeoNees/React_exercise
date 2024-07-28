@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Object4.html</title>
+</head>
+
+<body>
+    <script>
+        var a = { num: 1 }; // object
+        var b = '{num:1}'; // string
+
+        var mem = { num: 1, name: '짱구' };
+        var mem2 = mem;
+        mem2.num = 2;
+
+        var mem3 = { num: 1, name: '짱구' };
+
+        var result1 = mem == mem2; // true
+        var result2 = mem == mem3; // false
+    </script>
+</body>
+
+</html>

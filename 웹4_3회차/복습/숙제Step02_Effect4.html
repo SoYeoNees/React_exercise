@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Effect4.html</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            float: left;
+        }
+
+        .box:hover {
+            background: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="resetBtn">RESET</button>
+    <div class="box">div1</div>
+    <div class="box">div2</div>
+    <div class="box">div3</div>
+    <div class="box">div4</div>
+    <div class="box">div5</div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        /*
+            클릭한 div가 1초동안 서서히 흐려지면서 사라지게 만드세요.
+
+            RESET버튼 클릭시에 div 모두 나타나게 해보세요.
+        */
+        $('.box').on('click', function () {
+            $(this).fadeOut(1000);
+        });
+
+        $('#resetBtn').on('click', function () {
+            $('.box').show()
+        });
+    </script>
+</body>
+
+</html>

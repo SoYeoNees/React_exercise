@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Object1.html</title>
+</head>
+
+<body>
+    <script>
+        /*
+            [ Object Type ]
+            - {}를 이용해서 만들 수 있다
+            - {key1:value1, key2:value2, ...} 형식으로 작성한다
+            - 사전 형태로 데이터를 관리하는 방식이다.
+            - 순서가 중요하지 않은 데이터를 다룬다.
+        */
+
+        var mem = {
+            num: 1,
+            name: '짱구',
+            addr: "안양"
+        };
+
+        // 빈 object를 먼저 만들고
+        var mem2 = {};
+        // 나중에 필요한 값을 저장할 수 있다.
+        mem2.num = 2;
+        mem2.name = "짱아";
+        mem2.addr = "서울";
+
+        // mem.name에 저장된 값을 불러와서 변수에 담기
+        var myName = mem.name;
+        console.log(myName);
+
+        // mem.name 수정하기
+        mem.name = "철수";
+
+        // 특정 KEY 삭제
+        delete mem.addr;
+    </script>
+</body>
+
+</html>

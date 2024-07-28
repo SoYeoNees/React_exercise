@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_Animation1.html</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 1px solid blue;
+
+            /* 적용할 애니메이션 keyframes의 이름 */
+            animation: myAni;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 2;
+            /*
+                애니메이션의 진행 방향
+                normal | reverse | 
+            */
+            animation-direction: alternate;
+        }
+
+        /*.box:hover {} -> 호버 안해도 됨 */
+
+        /* 
+        애니메이션 keyframes 정의하기
+
+        @keyframes 작명{
+            진행률 {
+                    css
+                }
+            진행률 {
+                css
+            }
+        }
+    */
+        @keyframes myAni {
+            0% {
+                background-color: #0f0;
+                transform: rotate(0deg) scale(1.0);
+            }
+
+            50% {
+                background-color: red;
+                transform: rotate(-90deg) scale(0.5);
+            }
+
+            100% {
+                background-color: #00f;
+                transform: rotate(360deg) scale(1.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

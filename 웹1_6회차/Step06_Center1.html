@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step06_Center1.html</title>
+    <style>
+      /*
+            1. 부모요소에 position:relative
+            2. 자식요소에 
+            position:absolute;
+            left: 50%;
+            top:50%;
+            margin-left:-자식요소 width값의 절반;
+            margin-top:-자식요소 height값의 절반;        
+      */
+      .wrapper {
+        width: 500px;
+        height: 500px;
+        background-color: yellow;
+        margin: 0 auto;
+        position: relative;
+      }
+      .content {
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -25px;
+        margin-left: -25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content"></div>
+    </div>
+  </body>
+</html>

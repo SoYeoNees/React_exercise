@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_If4.html</title>
+</head>
+
+<body>
+    <div id="one"></div>
+    <script>
+        var result = prompt('임의의 정수를 입력하세요.');
+        var num = parseInt(result);
+
+        //
+        if (num % 2 == 0) {
+            document.querySelector('#one').innerText = "짝수입력함";
+        } else {
+            document.querySelector('#one').innerText = "홀수입력함";
+        }
+
+    </script>
+</body>
+
+</html>

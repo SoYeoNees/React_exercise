@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Step01_Selector4.html</title>
+    <style>
+      .div2 {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto;
+        position: relative;
+      }
+  </style>
+    
+  </head>
+  <body>
+    <div>div1</div>
+    <div class="div2">div2</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      // $('.div2').css('background-color', 'red')
+      var result = $('div:nth-child(1)').text();
+      /*
+     
+      $('.div2').text(result);
+
+      $('.div2').css('width','200px');
+      $('.div2').css('height','200px');
+      $('.div2').css('background-color','red');
+      $('.div2').css('position','absolute');
+      $('.div2').css('left','50%');
+      $('.div2').css('right','50%');
+      $('.div2').css('transform','translate(-50%,-50%)');
+      */
+
+      /*
+      "background-color"
+      backgroundColor
+      */
+      $('.div2').text(result).css({
+        width : "200px",
+        height : '200px',
+        backgroundColor : 'red',
+        position : "absolute",
+        left: '50%',
+        right: '50%',
+        transform: 'translate(-50%,-50%)'
+      });
+      /*
+		div1의 텍스트 값을 받아와서 .div2의 텍스트를 변경해보세요.
+
+		div2의 CSS를 변경해보세요.
+	*/
+    </script>
+  </body>
+</html>

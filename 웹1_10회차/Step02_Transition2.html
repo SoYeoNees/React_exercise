@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step02_Transition2.html</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 1px solid red;
+      }
+      #one {
+        transition: all 5s linear;
+      }
+      #two {
+        transition: all 5s ease-in;
+      }
+      #three {
+        transition: all 5s ease-out;
+      }
+      #four {
+        transition: all 5s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="one">linear</div>
+    <div class="box" id="two">ease-in</div>
+    <div class="box" id="three">ease-out</div>
+    <div class="box" id="four">ease-in-out</div>
+    <button id="startBtn">CLICK</button>
+    <script>
+      document
+        .querySelector("#startBtn")
+        .addEventListener("click", function () {
+          document.querySelectorAll(".box")[0].style.marginLeft = "700px";
+          document.querySelectorAll(".box")[1].style.marginLeft = "700px";
+          document.querySelectorAll(".box")[2].style.marginLeft = "700px";
+          document.querySelectorAll(".box")[3].style.marginLeft = "700px";
+        });
+    </script>
+  </body>
+</html>

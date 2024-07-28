@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p>은행계좌 리스트</p>
+    <ol>
+    </ol>
+</body>
+<script>
+    /*
+        1. arr이라는 Object 변수를 만드세요.
+        2. arr안에 name이라는 key 값을 만들고 '인간'이라는 value값을 넣으세요.
+        3. arr안에 money라는 key 값을 만들고 0이라는 value 값을 넣으세요.
+
+        4. ol이라는 변수를 만들고 html내부의 ol을 선택해보세요.
+            Hint.
+            document.querySelector('선택할 TAG')
+
+    */
+
+    var arr = { name: '인간', money: 0 };
+
+    var ol = document.querySelector('ol');
+
+
+    setInterval(function () {
+        var li = document.createElement('li', true)
+        li.textContent = `이름 : ${arr.name}, 잔고 : ${arr.money}`
+
+        ol.appendChild(li)
+    }, 1000)
+
+
+
+
+</script>
+
+</html>

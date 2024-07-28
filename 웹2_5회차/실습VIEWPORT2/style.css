@@ -1,0 +1,215 @@
+/************************ CSS Reset ************************/
+body,
+ul,
+li,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+body {
+	background-color: #64727f;
+}
+
+
+/*
+	1. header 로고영역을 만들어주세요.
+	배경색 c9e5ff
+	로고 너비값 280px / 높이값 50px
+*/
+.wrapper {
+	margin: 0 auto;
+	padding: 0 30px;
+	position: relative;
+}
+
+/************************ Header ************************/
+
+.header {
+	background-color: #c9e5ff;
+}
+
+.header .logo {
+	display: inline-block;
+	width: 280px;
+	height: 50px;
+	background-image: url('images/logo.png');
+	text-indent: -9999px;
+	margin: 20px 0;
+}
+
+.header .gnb {
+	background-color: #505c66;
+	overflow: hidden;
+}
+
+.header .gnb li {
+	float: left;
+}
+
+.header .gnb li a {
+	display: inline-block;
+	color: #fff;
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.header .gnb li a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header .point {
+	position: absolute;
+	right: -30px;
+	top: 0;
+	z-index: 9;
+}
+
+/************************ Content ************************/
+
+.contents {
+	background-color: #282e33;
+	padding: 10px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.contents li {
+	float: left;
+	width: 20%;
+}
+
+.contents li img {
+	width: 100%;
+}
+
+.contents li .inner {
+	text-align: center;
+	margin: 10px;
+	background-color: #000;
+}
+
+.contents li .inner h3 {
+	color: #77aaff;
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+.contents li .inner p {
+	color: #999;
+	padding: 20px;
+	font-size: 12px;
+}
+
+.contents li .inner p:after {
+	content: '';
+	display: block;
+	width: 150px;
+	height: 50px;
+	background-image: url('images/sprite-btn.png');
+	margin: 10px auto 0;
+}
+
+/************************ Footer ************************/
+
+.footer {
+	background-color: #282e33;
+	padding: 40px 0;
+	color: #999;
+	border-top: 1px solid #fff;
+}
+
+/************************ 1200 ************************/
+
+@media (min-width:1200px) {
+	.wrapper {
+		max-width: 1200px;
+	}
+}
+
+
+/************************ TABLET : 1024 ************************/
+
+@media (max-width:1024px) {
+	.contents li {
+		width: 33.3334%;
+	}
+}
+
+/************************ MOBILE : 768 ************************/
+
+
+@media (max-width:768px) {
+	.contents li {
+		width: 50%;
+	}
+
+	.header .point {
+		display: none;
+	}
+
+	.header {
+		text-align: center;
+	}
+
+	.header .gnb li {
+		width: 20%;
+	}
+
+	.header .gnb li a {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media (max-width:500px) {
+	.header {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 9;
+		box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	.header .logo {
+		margin: 10px 0;
+	}
+
+	.wrapper {
+		padding: 0;
+	}
+
+	.contents {
+		padding: 0;
+		margin-top: 120px;
+	}
+
+	.contents li {
+		width: 100%;
+	}
+
+	.contents li .inner {
+		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	.footer {
+		text-align: center;
+		padding: 10px 0;
+	}
+}

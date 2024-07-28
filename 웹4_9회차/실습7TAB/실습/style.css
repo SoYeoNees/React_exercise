@@ -1,0 +1,56 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+
+    width: 620px;
+    margin: 30px auto;
+    position: relative;
+	height:200px;
+}
+
+.nav {
+    width: 255px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav a {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*
+    모든 item들을 top 값을 이용하여 안보이게 만드세요.
+
+*/
+.box li{
+    position:absolute;
+}
+
+.box li img{
+    position: relative;
+    top:-230px;
+}
+
+.nav .line{
+	width :20px;
+	height:3px;
+	background-color:red;
+
+	position:absolute;
+}

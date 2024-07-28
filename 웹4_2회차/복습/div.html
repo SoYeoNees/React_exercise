@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div</title>
+</head>
+<body>
+<div>div1</div>
+<div class="divClass">div2</div>
+<div>div3</div>
+<div class="divClass">div4</div>
+<div id="divId">div5</div>
+<div class="divClass">div6</div>
+<div>div7</div>
+<div class="divClass">div8</div>
+<div>div9</div>
+<div class="divClass">div10</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    // $('div:even').css('background-color', 'yellow').css('width','50px').css('height','50px');
+	// $('div:odd').css('background-color', '#999').css('width','50px').css('height','50px');
+	// $('#divId').css('background-color', 'yellow').css('width','100px').css('height','100px');
+	/*
+		div의 크기들은 width height 50px입니다.
+		화면이랑 동일하게 만들어주세요.
+	*/
+
+	$('div').css({
+		width:'50px',
+		height: '50px',
+		backgroundColor: 'red'
+	}).text('');
+	$('.divClass').css('background-color', 'blue')
+
+	$('#divId').css({
+		width:'100px',
+		height: '100px',
+	})
+
+
+</script>	
+</body>
+</html>

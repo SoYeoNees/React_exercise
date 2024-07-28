@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step03_Float2.html</title>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <style>
+      .container {
+        width: 900px;
+        background-color: aquamarine;
+        margin: 0 auto;
+        /* overflow:hidden */
+      }
+      .container .left {
+        width: 300px;
+        height: 700px;
+        background-color: blueviolet;
+        /* 첫번째 방법 
+        display: inline-block;
+        margin-right: 10px;
+        */
+
+        /* 두번째 방법 : div class = "container clearfix"
+        float: left;
+        margin-right: 10px;
+        */
+
+        /* 세번째 방법 */
+        float: left;
+      }
+      .container .contents {
+        width: 590px;
+        height: 700px;
+        background-color: brown;
+        /* 첫번째 방법 
+        display: inline-block;
+        */
+
+        /* 두번째 방법 
+        float: left;
+        */
+
+        /* 세번째 방법 */
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <div class="left"></div>
+      <div class="contents"></div>
+    </div>
+  </body>
+</html>

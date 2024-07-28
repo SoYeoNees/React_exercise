@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_Animation2.html</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f;
+            border: 1px solid red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* animation property를 한줄로 나열*/
+            animation: boxAni 1s ease-out infinite alternate;
+        }
+
+        @keyframes boxAni {
+            0% {
+                background-color: #f0f;
+                transform: translate(-50%, -50%) rotate(0deg) scale(1.0);
+            }
+
+            100% {
+                background-color: #0ff;
+                transform: translate(-50%, -50%) rotate(360deg) scale(1.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

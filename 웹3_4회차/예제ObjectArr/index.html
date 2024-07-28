@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <ol></ol>
+</body>
+<script>
+    /*
+        1. users 라는 이름의 배열(array) 타입 변수를 만드세요.
+        2. 배열안에 오브젝트 5개를 배열하세요.
+        3. 각각의 오브젝트들은 name, age, phone이라는 key 값을 가지게 하세요.
+        4. value 값으로 각각 아래 문구를 넣으세요.
+        '짱구', 5, '1111'
+        '짱아', 1, '2222'
+        '흰둥이', 2, '3333'
+        '철수', 5, '4444'
+        '훈이', 5, '5555'
+
+    */
+
+    var users = [
+        { name: '짱구', age: 5, phone: "1111" },
+        { name: '짱아', age: 1, phone: "2222" },
+        { name: '흰둥이', age: 2, phone: "3333" },
+        { name: '철수', age: 5, phone: "4444" },
+        { name: '훈이', age: 5, phone: "5555" }
+    ]
+
+
+    for (var i = 0; i < 5; i++) {
+        let newName = document.querySelector('ol')
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(users[i].name + ', ' + users[i].age + ', ' + users[i].phone));
+        newName.appendChild(li)
+    }
+
+</script>
+
+</html>

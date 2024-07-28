@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fadeIn.html</title>
+</head>
+<body>
+<button id="createBtn">CREATE</button>
+<button id="clickBtn">CLICK</button>
+<ul id="wrapper">
+
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	/*
+		#createBtn으로 메모리 공간에 li를 생성한 후에
+		#clickBtn을 클릭하면 그 때 li들을 모조리 wrapper에 넣어주세요.
+		대신 fadeIn을 사용하여 li가 나타나게 해주세요.
+	*/
+
+var li = [];
+
+$('#createBtn').on('click', function(){
+	var liCr = document.createElement('li');
+	$(liCr).text('li').css('display','none');
+	li.push(liCr);
+	console.log(li);
+});
+
+$('#clickBtn').on('click',function(){
+	for(var i=0; i<li.length; i++){
+		document.getElementById('wrapper').append(li[i]);
+	}
+	$(li).fadeIn();
+})
+
+</script>
+</body>
+</html>

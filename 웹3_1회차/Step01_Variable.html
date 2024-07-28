@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step01_Variable.html</title>
+  </head>
+  <body>
+    <script>
+      /*
+            여러줄 주석
+            하나
+            두울
+            세엣...
+        */
+      // 한줄주석
+      /*
+            [ 변수 ]
+            - 값을 저장할 수 있는 이름 지어진 공간
+
+            - 만드는 방법
+            1.
+            var 변수명;
+            변수명 = 값;
+
+            2.
+            var 변수명 = 초기값;
+
+            - 변수명은 영문자로 시작하고 예약어는 사용할 수 없습니다.
+            [ 예약어? ]
+            이미 자바스크립트에서 사용하고 있는 언어들
+        */
+
+      var num1 = 999;
+      console.log(num1);
+
+      var myName = "SBS";
+      var myStudy;
+      myStudy = "자바스크립트";
+
+      var ourName; // undefined
+      // undefined : 변수를 선언하고 값을 할당하지 않은 상태(자료형이 없음)
+      var yourName = null; // null
+      // null : 변수를 선언하고 빈 값을 할당한 상태(빈 객체) object
+
+      num1 = 1000;
+      console.log(num1);
+      // 변수는 값이 계속 바뀔 수 있다
+    </script>
+  </body>
+</html>

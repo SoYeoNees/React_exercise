@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Step06_Example.html</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<style>
+		#msgList li:hover {
+			background-color: yellow;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container mt-4">
+		<input type="text" id="inputMsg" />
+		<button class="btn btn-primary" id="sendBtn">전송</button>
+		<ul class="list-group" id="msgList">
+			<li class="list-group-item">하나</li>
+			<li class="list-group-item">두울</li>
+		</ul>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		/*
+			input요소의 value를 받아와서 li에 넣으세요
+			li CLICK시에 그 text가 alert로 나오게 만드세요.
+		*/
+
+		$('#sendBtn').on('click', function () {
+			var msg = $('#inputMsg').val();
+			$('<li>')
+				.text(msg)
+				.addClass('list-group-item')
+				.appendTo('#msgList')
+				.click(function () {
+					alert($(this).text());
+				});
+			$('#inputMsg').val('');
+		});
+
+		$('#msgList li').on('click', function () {
+			alert($(this).text());
+		});
+
+		/* 새로 생성된 li에서는 작동이 되지 않음 */
+		/*
+		$('#msgList li').click(function () {
+			var isDelete = confirm('제거할까요?');
+			if (isDelete) {
+				$(this).remove(); // remove() : 문서객체를 body에서 제거
+			}
+		});
+
+		$('#msgList li').on("click", function () {
+			var isDelete = confirm('제거할까요?');
+			if (isDelete) {
+				$(this).remove(); // remove() : 문서객체를 body에서 제거
+			}
+		});
+		*/
+
+		$(document).on('click', '#msgList li', function () {
+			var isDelete = confirm('제거할까요?');
+			if (isDelete) {
+				$(this).remove(); // remove() : 문서객체를 body에서 제거
+			}
+		});
+
+
+	</script>
+</body>
+
+</html>

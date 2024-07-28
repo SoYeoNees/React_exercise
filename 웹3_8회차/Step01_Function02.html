@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Function02.html</title>
+</head>
+
+<body>
+    <script>
+        /*
+            [ 함수가 종료되는 시점 ]
+            1. 실행하다가 더이상 실행할게 없을 때
+            2. 실행하다가 return 이라는 예약어를 만났을 때
+        */
+
+        var a = function () {
+            console.log('a함수 호출');
+        }
+
+        var b = function () {
+            console.log('b함수 호출');
+            return;
+        }
+
+        a();
+        b();
+        console.log('javascript 로딩 종료');
+    </script>
+</body>
+
+</html>

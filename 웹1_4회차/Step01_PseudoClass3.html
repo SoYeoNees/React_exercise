@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_PseudoClass3.html</title>
+    <style>
+        p:first-letter {
+            font-weight: bold;
+            /* 글자 굵기 */
+            color: red;
+        }
+
+        #one:first-line {
+            background-color: yellow;
+        }
+
+        .quote:before {
+            content: "안녕!";
+            color: red;
+        }
+
+        .quote:after {
+            content: "HELLO!";
+            color: blue;
+        }
+
+        div p:nth-child(1) {
+            /* nth-child(1) = first-child*/
+            font-weight: bold;
+            color: green;
+        }
+
+        div p:last-child {
+            font-weight: bold;
+            color: rgb(80, 167, 238);
+        }
+
+        div p:nth-child(2n+1)
+
+        /* 홀수 적용 */
+            {
+            font-weight: bold;
+            color: rgb(139, 255, 155);
+        }
+
+        div p:nth-child(2n)
+
+        /* 짝수 적용 */
+            {
+            font-weight: bold;
+            color: rgb(255, 139, 205);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dicta velit nemo, voluptatibus totam
+            consequatur accusantium temporibus similique fugit, recusandae pariatur facilis dolores culpa minima
+            possimus? Corrupti dicta officiis provident.</p>
+        <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dicta velit nemo, voluptatibus totam
+            consequatur accusantium temporibus similique fugit, recusandae pariatur facilis dolores culpa minima
+            possimus? Corrupti dicta officiis provident.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dicta velit nemo, voluptatibus totam
+            consequatur accusantium temporibus similique fugit, recusandae pariatur facilis dolores culpa minima
+            possimus? Corrupti dicta officiis provident.</p>
+        <p class="quote">천리길도</p>
+        <p class="quote">한걸음</p>
+        <p class="quote">부터</p>
+        <p class="quote">천리길도</p>
+        <p class="quote">한걸음</p>
+        <p class="quote">부터</p>
+    </div>
+</body>
+
+</html>

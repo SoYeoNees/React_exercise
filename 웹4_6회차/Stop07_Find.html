@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop07_Find.html</title>
+</head>
+
+<body>
+    <div>
+        <img src="/images/icon01.png" alt="">
+        <span>루이지</span>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        /*
+            [ Find 메서드 ]
+            자식요소를 찾을때 사용하는 메서드
+
+            childeren은 자식요소만 탐색
+            find는 자식 및 하위태그(자손) 모두에서 탐색
+        */
+        var findEl = $('div').find('span');
+        findEl.text('마리오');
+    </script>
+</body>
+
+</html>

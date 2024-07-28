@@ -1,0 +1,20 @@
+.container {
+    height: 200px;
+    background-color: pink;
+    border: 3px solid red;
+}
+
+.item:first-child {
+    width: 100px;
+    background-color: red;
+}
+
+.item:nth-child(2) {
+    width: 600px;
+    background-color: blue;
+}
+
+.item:last-child {
+    width: 200px;
+    background-color: green;
+}
