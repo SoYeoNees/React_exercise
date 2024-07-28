@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_Selector2.html</title>
+    <style>
+        .animals.friends {
+            background-color: #adadad;
+            color: #ff34ff;
+        }
+        /*
+            선택자를 붙여서 쓰면 AND 조건으로 문서 선택
+
+            div.animals => div 태그이면서 클래스명이 animals
+            p.friends => p 태그이면서 클래스명이 friends
+            div.a.b => div 태그이면서 클래스명이 a와 b
+            .a.b => 클래스명이 a와 b
+        */
+    </style>
+</head>
+<body>
+    <div class="animals friends">
+        <h2>Dog</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptatum, cum exercitationem sunt et, maiores quaerat nobis perspiciatis earum repellendus eius illum quia in minima possimus beatae aspernatur, corrupti unde!</p>
+    </div>
+
+    <div class="animals">
+        <h2>Cat</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt neque facere. Mollitia molestiae libero deleniti optio dolore dignissimos laborum, error ad cumque exercitationem sapiente nisi, ducimus impedit, doloribus nesciunt.</p>
+    </div>
+
+    <div class="friends">
+        <h2>짱구</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione dolore consectetur ipsam, perspiciatis praesentium voluptatum impedit ullam eum eaque non corrupti ea deleniti corporis dignissimos molestiae exercitationem? Dignissimos, animi.</p>
+    </div>
+
+    <p class="animals">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti modi, exercitationem eum quae neque soluta vitae nemo quisquam dolorem qui est illum enim architecto, id repellendus doloribus molestiae eaque!</p>
+</body>
+</html>

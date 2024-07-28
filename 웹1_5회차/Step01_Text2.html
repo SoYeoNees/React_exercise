@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Text2.html</title>
+    <style>
+       div {
+        border: 1px solid red;
+       }
+    #one {text-align: lift; /* 글자정렬 : 왼쪽 */}
+    #two {text-align: center; /* 글자정렬 : 가운데 */}
+    #three {text-align: right; /* 글자정렬 : 오른쪽 */}
+    .wrapper {
+        /*
+            inline 혹은 inline-block 요소의
+            가운데 정렬에도 활용
+        */
+        text-align: center;        
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: yellowgreen;
+        display: inline-block;
+    }
+    #four {
+        text-align: justify;
+    }
+    </style>
+</head>
+<body>
+    <div id="one">짱구</div>
+    <div id="two">짱아</div>
+    <div id="three">흰둥이</div>
+    <div class="wrapper">
+        <div class="box"></div>
+    </div>
+    <p id="four">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, consequatur quaerat! Iusto enim explicabo, esse quasi, odio maxime sunt quas eaque aliquam magni officiis qui dolorum dignissimos aperiam suscipit! Voluptatum!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis debitis tempore quaerat minima, ratione incidunt numquam, facilis esse, nam reiciendis aliquam inventore? Doloribus porro maiores, architecto rem facere rerum nihil.</p>
+</body>
+</html>

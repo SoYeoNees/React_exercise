@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step04_position4.html</title>
+    <style>
+        .wraper {
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            margin: 0 auto; /* block 요소의 센터 정렬(inline 요소는 적용X) */
+            position: relative;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(146, 220, 181);
+            position: absolute;
+        }
+        #one {
+            left: 100px;
+            top: 100px;
+        }
+        #two
+        {
+            right: 100px;
+            top: 100px;
+        }
+        #three {
+            left: 100px;
+            bottom: 100px;
+        }
+        #four {
+            right: 100px;
+            bottom: 100px;
+        }
+        #five {
+            left: 225px;
+            bottom: 225px;
+        }
+        #six {
+            /* 팝업창 뜰때 사용 */
+            background-color: #000;
+            color:#fff;
+            position:absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.5; /* 투명도 0 ~ 1.0 */
+        }
+    </style>
+</head>
+<body>
+    <div class="wraper">
+        <div class="box" id="one">one</div>
+        <div class="box" id="two">two</div>
+        <div class="box" id="three">three</div>
+        <div class="box" id="four">four</div>
+        <div class="box" id="five">five</div>
+        <div id="six">six</div>
+    </div>
+</body>
+</html>

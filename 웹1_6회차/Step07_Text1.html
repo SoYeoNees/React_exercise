@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step07_Text1.html</title>
+  <style>
+    html {
+      margin: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 0);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /*
+        1. 첫번째 방법
+        .wrapper {
+          width: 800px;
+          background-color: rgb(255, 255, 255);
+          margin: 50px auto;
+          padding: 10px;
+        }
+        .wrapper img {
+          float: left;
+        }
+  
+        .wrapper p {
+          margin-left: 250px;
+        }
+      */
+
+    /*
+        2. 두번째 방법
+        .wrapper {
+          width: 800px;
+          background-color: rgb(255, 255, 255);
+          margin: 50px auto;
+          padding: 10px;
+          overflow:hidden;
+        }
+        .wrapper img {
+          float: left;
+        }
+  
+        .wrapper p {
+          width: 580px;
+          float: right;
+        }
+      */
+
+    /*
+        3. 세번째 방법
+      */
+    .wrapper {
+      width: 800px;
+      background-color: rgb(255, 255, 255);
+      margin: 50px auto;
+      padding: 10px;
+    }
+
+    .wrapper img {
+      float: left;
+    }
+
+    .wrapper p {
+      overflow: hidden;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper clearfix">
+    <img src="/logo.png" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+      voluptate veniam quam dolorem laudantium, hic minima mollitia iure
+      perspiciatis autem est optio eligendi. Praesentium autem soluta
+      exercitationem, reprehenderit nisi nihil! Optio, ad illum temporibus
+      illo at natus suscipit sequi ab voluptates sint reiciendis dignissimos
+      corporis quis alias recusandae. Fugiat quos vero aliquam non incidunt
+      asperiores deleniti illo corrupti temporibus suscipit. Perferendis
+      possimus suscipit modi ipsa. Natus ab fugiat cumque eligendi provident
+      nesciunt qui odit eum nihil? Harum in quo minima quasi provident,
+      temporibus quae beatae quia, est sint a cupiditate. Ipsa enim, eligendi
+      labore officia obcaecati voluptatum voluptate sit commodi nostrum ut ea
+      delectus amet tenetur! Ad impedit molestiae laborum dolore itaque
+      laboriosam, sit vel sed nulla eius! Eius, expedita! Maxime libero
+      cupiditate perferendis amet quos doloribus voluptate magni minima
+      voluptatibus, quia possimus facilis eaque fugit, architecto placeat eum
+      ratione odit quam corporis quaerat error eos iste repellat fugiat.
+      Cupiditate.
+    </p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_Float1.html</title>
+    <style>
+        .container {
+            width: 500px;
+            border: 1px solid blue;
+            margin: 0 auto;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid red;
+        }
+
+        /* 인라인 요소 처럼 보이게 함. 높이 값을 잃음 */
+        #one {float: left;}
+        #two {float: right;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus inventore amet, ut consequuntur doloribus ipsum quibusdam minus hic tenetur esse aut repellendus nihil expedita, at velit reiciendis facilis temporibus quasi?</p>
+        <div class="box" id="one">div1</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus inventore amet, ut consequuntur doloribus ipsum quibusdam minus hic tenetur esse aut repellendus nihil expedita, at velit reiciendis facilis temporibus quasi?</p>
+        <div class="box" id="two">div2</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus inventore amet, ut consequuntur doloribus ipsum quibusdam minus hic tenetur esse aut repellendus nihil expedita, at velit reiciendis facilis temporibus quasi?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_PseudoClass2.html</title>
+    <style>
+        a {
+            text-decoration: none; /* 밑줄 제거 */
+        }
+        a:hover{
+            text-decoration: underline; /* 밑줄 추가 */
+        }
+        /* 한번도 방문하지 않은 링크 가상클래스 선택자*/
+        a:link{
+            color: rgb(218, 147, 243);
+        }
+        /* 이미 방문했던 링크 가상클래스 선택자 */
+        a:visited{
+            color: rgb(255, 158, 14);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://naver.com">Naver</a>
+    <a href="https://daum.net">Daum</a>
+</body>
+</html>

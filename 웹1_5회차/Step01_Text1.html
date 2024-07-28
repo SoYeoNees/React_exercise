@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Text1.html</title>
+    <style>
+        .wrapper1 {
+    /*
+        [ 글자 스타일 ] normal | italic
+        상속된다.
+    */
+    font-style: italic;
+    /*
+        [ 글꼴 ] 좌측에서부터 순서대로 적용된다.
+        상속된다.
+    */
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+        [ 글자의 굵기 ] normal | borde | ....
+        상속된다.
+    */
+    font-weight: bold;
+    /*
+        [ 글자 꾸미기 ]
+        none | underline | overline | line-through
+        상속된다.
+    */
+    text-decoration: underline;
+    /*
+        [ 글자 색상 ]
+        상속된다.
+    */
+    color: red;
+    }
+    .wrapper2 {
+    /*
+        [ 글자 크기 ]
+        px | % | em | rem | vw | vh ....
+        상속된다.
+    */
+        font-size: 20px;
+    /*
+        [ 글자 변환]
+        none | uppercase | lowercase | capitalize
+        상속된다.
+    */
+        text-decoration: uppercase;
+    /*
+        [ 자간 ] 글자 사이의 간격
+        상속된다.
+    */
+        letter-spacing: -1px;
+    /*
+        [ 행간 ] 줄 사이의 간격
+        상속된다.
+    */
+        line-height: 1.5; /* 1 ~ 1.5 베스트*/
+    /*
+        [ 들여쓰기 ]
+        상속된다.
+    */
+        text-indent: -99999px;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure itaque quia mollitia, hic facere consequatur a nesciunt doloribus soluta dolor, deserunt excepturi possimus dolore porro qui dolores repellat accusamus.</p>
+    </div>
+    <div class="wrapper2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure itaque quia mollitia, hic facere consequatur a nesciunt doloribus soluta dolor, deserunt excepturi possimus dolore porro qui dolores repellat accusamus.</p>
+    </div>
+    <div class="wrapper3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iure itaque quia mollitia, hic facere consequatur a nesciunt doloribus soluta dolor, deserunt excepturi possimus dolore porro qui dolores repellat accusamus.</p>
+    </div>
+</body>
+</html>

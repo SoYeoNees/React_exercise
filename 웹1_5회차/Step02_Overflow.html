@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step02_Overflow.html</title>
+    <style>
+      .wrapper {
+        background-color: rgb(90, 139, 122);
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        /*
+                visible : default
+                auto : scroll 처리 (삐져나간만큼)
+                * 컨텐츠가 안쪽 상자영역에 들어간다면 visible과 동일
+                hidden : 안보이게 처리
+                scroll : scroll 처리 (삐져나간만큼)
+            */
+        overflow-x: scroll;
+        overflow-y: hidden;
+      }
+      .box {
+        background-color: rgb(55, 143, 220);
+        width: 600px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">div1</div>
+      <p class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae ut
+        consequuntur officia ullam dolorum? Repellendus voluptas nulla minus
+        quam, velit delectus veritatis dolor exercitationem neque vero excepturi
+        labore ad illum.
+      </p>
+    </div>
+  </body>
+</html>
