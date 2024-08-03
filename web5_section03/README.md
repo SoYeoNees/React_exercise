@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+## 1. Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 긴 HTML을 한 단어로 치환할 수 있는 문법
+- 작명시 첫글자는 영어대문자로 작명
+- function App(){} 내부에서 만들 수 없다
 
-## Available Scripts
+<언제 사용?>
+- 사이트에 반복해서 출현
+- 내용이 자주 변경될 거 같을때
+- 다른 페이지를 만들 때
 
-In the project directory, you can run:
+<사용법>
 
-### `npm start`
+...bash
+<Component></Component>
+<Component />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+function Component(){
+    return(
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    )
+}
 
-### `npm test`
+let Component = () => {
+    return(
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    )
+}
+...
 
-### `npm run build`
+## 2. 조건문
+- jsx안에서는 if, else if 사용 불가능
+- 삼항연산자 사용
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+조건식 ? 참일때 실행할코드 : 거짓일때 실행할 코드
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 3. 반복문
+- jsx 안에서는 for 사용 불가능
+- map()함수 사용
+- key={} : 리액트가 각 요소를 구분하기 위해서
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 4. Props
+- 다른 컴포넌트 안에 있는 컴포넌트를 자식 컴포넌트라고 부름
+- 부모 컴포넌트의 state는 자식 컴포넌트에서 사용 불가
+- 자식 컴포넌트에서 부모 컴포넌트로도 전송 불가
 
-### `npm run eject`
+<언제사용?>
+- 부모 컴포넌트의 state를 자식 컴포넌트에게 전송해줄 때
+- 일반 변수, 문자, 숫자, 함수도 전송 가능
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<사용법>
+- 부모 컴포넌트 :: <ChildCom 작명={state이름}>
+- 자식 컴포넌트 :: function ChildCom(props){}
