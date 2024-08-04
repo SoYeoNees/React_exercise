@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-=======
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
->>>>>>> 325c99ab9cc4ca7775f03626b478ac3679d71c60
+
+.red{
+  color:red
+}
