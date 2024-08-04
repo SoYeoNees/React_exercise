@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step06_LocalStroage2.html</title>
+</head>
+
+<body>
+    <script>
+        /*
+            [ 로컬스토리지에 arr, obj 저장 ]
+            - JSON으로 바꿔서 저장(깨지기 때문)
+        */
+        let arr = [1, 2, 3];
+        let newArr = JSON.stringify(arr); // JSON형태로 변환
+
+        localStorage.setItem('num', newArr);
+
+        // 꺼내쓰기
+        let item = localStorage.getItem('num');
+        item = JSON.parse(item); // JSON을 다시 arr, obj로 변환
+        console.log(item);
+    </script>
+</body>
+
+</html>
